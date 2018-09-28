@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Crastinus</string>
+    <string name="title_home">Home</string>
+    <string name="title_categories">Categories</string>
+    <string name="title_config">Configuration</string>
+    <string name="plus_1">+1</string>
+    <string name="categories">Categories</string>
+    <string name="todos">ToDos</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
