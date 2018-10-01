@@ -1,4 +1,4 @@
-package com.bittya.crastinus.fragment
+package com.bittya.crastinus.fragments
 
 import android.content.Context
 import android.os.Bundle
@@ -9,16 +9,19 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import com.bittya.crastinus.R
-import com.bittya.crastinus.controllers.CategoryController
-import com.bittya.crastinus.dtos.Category
+import com.bittya.crastinus.controllers.ToDoController
+import com.bittya.crastinus.dtos.ToDo
+import kotlinx.android.synthetic.main.fragment_todo_list.*
 
 /**
  * A fragment representing a list of Items.
  * Activities containing this fragment MUST implement the
- * [CategoryFragment.OnListFragmentInteractionListener] interface.
+ * [ToDoFragment.OnListFragmentInteractionListener] interface.
  */
-class CategoryFragment : Fragment() {
+class ToDoFragment : Fragment() {
 
     // TODO: Customize parameters
     private var columnCount = 1
@@ -35,7 +38,7 @@ class CategoryFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_category_list, container, false)
+        val view = inflater.inflate(R.layout.fragment_todo_list, container, false)
 
         // Set the adapter
         if (view is RecyclerView) {
@@ -44,8 +47,8 @@ class CategoryFragment : Fragment() {
                     columnCount <= 1 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
                 }
-                val values = CategoryController().getCategories()
-                adapter = CategoryRecyclerViewAdapter(values, listener)
+                val values = ToDoController().getToDos()
+                adapter = ToDoRecyclerViewAdapter(values, listener)
             }
         }
         return view
@@ -78,7 +81,7 @@ class CategoryFragment : Fragment() {
      */
     interface OnListFragmentInteractionListener {
         // TODO: Update argument type and name
-        fun onListFragmentInteraction(item: Category?)
+        fun onListFragmentInteraction(toDo: ToDo?)
     }
 
     companion object {
@@ -89,7 +92,7 @@ class CategoryFragment : Fragment() {
         // TODO: Customize parameter initialization
         @JvmStatic
         fun newInstance(columnCount: Int) =
-                CategoryFragment().apply {
+                ToDoFragment().apply {
                     arguments = Bundle().apply {
                         putInt(ARG_COLUMN_COUNT, columnCount)
                     }

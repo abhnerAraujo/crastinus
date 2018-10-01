@@ -16,25 +16,34 @@
             android:name="com.activeandroid.content.ContentProvider"
             android:authorities="com.bittya.crastinus"
             android:enabled="true"
-            android:exported="false"/>
-        <meta-data android:name="AA_DB_NAME" android:value="dev_crastinus_main" />
-        <meta-data android:name="AA_DB_VERSION" android:value="1" />
+            android:exported="false" />
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="dev_crastinus_main" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
         <meta-data
             android:name="AA_MODELS"
-            android:value=
-            "com.bittya.crastinus.daos.CategoryModel,
+            android:value="com.bittya.crastinus.daos.CategoryModel,
             com.bittya.crastinus.daos.ToDoModel,
-            com.bittya.crastinus.daos.UserModel"
-        />
+            com.bittya.crastinus.daos.UserModel" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

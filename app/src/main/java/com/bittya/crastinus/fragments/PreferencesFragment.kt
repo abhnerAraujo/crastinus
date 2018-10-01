@@ -1,4 +1,4 @@
-package com.bittya.crastinus.fragment
+package com.bittya.crastinus.fragments
 
 import android.content.Context
 import android.net.Uri

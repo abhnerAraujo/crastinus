@@ -1,4 +1,4 @@
-package com.bittya.crastinus.fragment
+package com.bittya.crastinus.fragments
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import android.widget.TextView
 import com.bittya.crastinus.R
 
 
-import com.bittya.crastinus.fragment.ToDoFragment.OnListFragmentInteractionListener
+import com.bittya.crastinus.fragments.ToDoFragment.OnListFragmentInteractionListener
 import com.bittya.crastinus.dtos.ToDo
 
 import kotlinx.android.synthetic.main.fragment_todo.view.*
