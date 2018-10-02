@@ -21,7 +21,7 @@ class SplashActivity : AppCompatActivity() {
                 kotlin.math.floor(imageLogo.height * 0.7).toInt(),
                 false)
 
-        logo.setImageBitmap(resized)
+//        logo.setImageBitmap(resized)
 
         Handler().postDelayed(
                 {

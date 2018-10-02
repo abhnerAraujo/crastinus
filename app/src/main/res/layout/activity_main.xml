@@ -24,12 +24,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/message">
+        app:layout_constraintTop_toBottomOf="@id/message">
 
         <Button
             android:id="@+id/plus_one_todo"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:onClick="plusOneToDo"
             android:text="@string/plus_1" />
@@ -37,7 +38,8 @@
         <Button
             android:id="@+id/plus_one_category"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:onClick="plusOneCategory"
             android:text="@string/plus_1" />
@@ -45,7 +47,8 @@
         <Button
             android:id="@+id/get_categories"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:onClick="getCategories"
             android:text="@string/categories" />
@@ -53,7 +56,8 @@
         <Button
             android:id="@+id/get_todo"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:onClick="getToDos"
             android:text="@string/todos" />
@@ -63,8 +67,8 @@
         android:id="@+id/main_frame"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/navigation"
-        app:layout_constraintTop_toBottomOf="@+id/buttons_container">
+        app:layout_constraintBottom_toTopOf="@id/navigation"
+        app:layout_constraintTop_toBottomOf="@id/buttons_container">
 
     </FrameLayout>
 
