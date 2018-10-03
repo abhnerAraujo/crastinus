@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.HomeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/maybe_today"
+                style="@style/HomeSectionTitle"
+                android:id="@+id/title_maybe_today"/>
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/separator_maybe_today"
+                android:layout_height="1dp"
+                android:theme="@style/TextAppearance.AppCompat.Large"
+                android:layout_alignBottom="@id/title_maybe_today"
+                android:background="@color/primaryDarkColor" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/items_maybe_today"
+                android:orientation="vertical"
+                android:layout_alignBottom="@id/separator_maybe_today" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/maybe_tomorrow"
+                style="@style/HomeSectionTitle"
+                android:id="@+id/title_maybe_tomorrow"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:theme="@style/TextAppearance.AppCompat.Large"
+                android:layout_alignBottom="@id/title_maybe_tomorrow"
+                android:id="@+id/separator_maybe_tomorrow"
+                android:background="@color/primaryDarkColor" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/items_maybe_tomorrow"
+                android:orientation="vertical"
+                android:layout_alignBottom="@id/separator_maybe_tomorrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/an_day"
+                style="@style/HomeSectionTitle"
+                android:id="@+id/title_an_day"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:theme="@style/TextAppearance.AppCompat.Large"
+                android:id="@+id/separator_an_day"
+                android:layout_alignBottom="@id/title_an_day"
+                android:background="@color/primaryDarkColor" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/items_an_day"
+                android:orientation="vertical"
+                android:layout_alignBottom="@id/separator_an_day" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

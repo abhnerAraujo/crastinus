@@ -10,4 +10,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="logo">Logo</string>
+    <string name="maybe_today">Talvez hoje</string>
+    <string name="maybe_tomorrow">Talvez Amanhã</string>
+    <string name="an_day">Um dia</string>
 </resources>
